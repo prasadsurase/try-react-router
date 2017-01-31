@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react';
-import { Link } from 'react-router';
+import NavLink from './NavLink';
 
 class Repos extends Component {
   render(){
@@ -8,9 +8,10 @@ class Repos extends Component {
       <div>
         Repos
         <ul>
-          <li><Link path='/repos/reactjs/react-router'>React Router</Link></li>
-          <li><Link path='/repos/facebook/react'>Facebook React</Link></li>
+          <li><NavLink to="/repos/reactjs/react-router">React Router</NavLink></li>
+          <li><NavLink to="/repos/facebook/react">React</NavLink></li>
         </ul>
+        { this.props.children }
       </div>
     );
   }

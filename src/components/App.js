@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavLink from './NavLink';
+import Home from './Home';
 
 class App extends Component {
   render() {
@@ -10,7 +11,7 @@ class App extends Component {
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/repos">Repos</NavLink></li>
           </ul>
-          { this.props.children }
+          { this.props.children || Home }
         </div>
       </div>
     );

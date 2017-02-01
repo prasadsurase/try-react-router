@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <ul role="nav">
+          <ul>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/repos">Repos</NavLink></li>
           </ul>

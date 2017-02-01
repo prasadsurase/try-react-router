@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react';
 import NavLink from './NavLink';
 
 class Repos extends Component {
